@@ -1,0 +1,15 @@
+branches:
+- conditions:
+  - left: "abc"
+    operator: "=="
+    right: "abc"
+  - left: "2"
+    operator: ">"
+    right: 4
+  consequent: true
+- condition:
+    left: "2"
+    operator: "<"
+    right: 10
+  consequent: true
+alternative: false

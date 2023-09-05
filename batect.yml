@@ -1,0 +1,13 @@
+containers:
+  gradle:
+    image: gradle:8.3-jdk17
+    volumes:
+      - local: .
+        container: /decider
+    working_directory: /decider
+
+tasks:
+  test:
+    run:
+      container: gradle
+      command: gradle test

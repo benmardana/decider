@@ -1,0 +1,28 @@
+{
+  "branches": [
+    {
+      "conditions": [
+        {
+            "left": "%1$s",
+            "operator": "==",
+            "right": "abc"
+        },
+        {
+          "left": "%2$s",
+          "operator": ">",
+          "right": 4
+        }
+      ],
+      "consequent": true
+    },
+    {
+      "condition": {
+        "left": "%2$s",
+        "operator": "<",
+        "right": 10
+      },
+      "consequent": true
+    }
+  ],
+  "alternative": false
+}
